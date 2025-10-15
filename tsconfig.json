@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": ".",
+    "paths": {
+      "@gleam-openclaw/core": ["packages/core/src"],
+      "@gleam-openclaw/solana-gateway": ["packages/solana-gateway/src"],
+      "@gleam-openclaw/model-router": ["packages/model-router/src"],
+      "@gleam-openclaw/plugin-sdk": ["packages/plugin-sdk/src"],
+      "@gleam-openclaw/agent-browser": ["packages/agent-browser/src"],
+      "@gleam-openclaw/tavily-search": ["packages/tavily-search/src"],
+      "@gleam-openclaw/rhclaw": ["packages/rhclaw/src"],
+      "@gleam-openclaw/skill-vetter": ["packages/skill-vetter/src"],
+      "@gleam-openclaw/browser-agent": ["packages/browser-agent/src"],
+      "@gleam-openclaw/conversation-compressor": ["packages/conversation-compressor/src"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "**/dist"]
+}

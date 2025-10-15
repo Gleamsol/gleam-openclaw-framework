@@ -1,0 +1,41 @@
+{
+  "name": "gleam-openclaw-framework",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Gleam OpenClaw API Solana — Use Solana MEME tokens to power OpenClaw Agent calls. A full-stack open-source framework for token-gated AI agent orchestration on Solana.",
+  "author": "Gleamsol",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gleamsol/gleam-openclaw-framework.git"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "build": "pnpm -r run build",
+    "test": "pnpm -r run test",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "clean": "pnpm -r run clean && rm -rf node_modules",
+    "typecheck": "pnpm -r run typecheck",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "eslint": "^8.56.0",
+    "husky": "^9.0.0",
+    "prettier": "^3.2.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0",
+    "tsup": "^8.0.0",
+    "turbo": "^1.12.0"
+  },
+  "pnpm": {
+    "overrides": {}
+  }
+}
