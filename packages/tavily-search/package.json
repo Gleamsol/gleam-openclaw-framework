@@ -1,0 +1,25 @@
+{
+  "name": "@gleam-openclaw/tavily-search",
+  "version": "2.0.0",
+  "description": "Tavily Search integration — AI-native search with structured summaries, source attribution, and no ads",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "import": "./dist/index.js", "types": "./dist/index.d.ts" }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "dev": "tsup src/index.ts --format esm --dts --watch",
+    "test": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "eventemitter3": "^5.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "tsup": "^8.0.0",
+    "vitest": "^1.2.0"
+  },
+  "license": "MIT"
+}
