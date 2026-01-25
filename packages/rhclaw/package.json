@@ -1,0 +1,26 @@
+{
+  "name": "@gleam-openclaw/rhclaw",
+  "version": "2.0.0",
+  "description": "RHClaw — Multi-modal execution engine for image, audio, video full-stack creation",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "import": "./dist/index.js", "types": "./dist/index.d.ts" }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "dev": "tsup src/index.ts --format esm --dts --watch",
+    "test": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@gleam-openclaw/model-router": "workspace:*",
+    "eventemitter3": "^5.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "tsup": "^8.0.0",
+    "vitest": "^1.2.0"
+  },
+  "license": "MIT"
+}
