@@ -1,0 +1,26 @@
+{
+  "name": "@gleam-openclaw/skill-vetter",
+  "version": "2.0.0",
+  "description": "Skill Vetter — validate, audit, and vet agent skills for safety and quality",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": { "import": "./dist/index.js", "types": "./dist/index.d.ts" }
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts",
+    "dev": "tsup src/index.ts --format esm --dts --watch",
+    "test": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "zod": "^3.22.0",
+    "eventemitter3": "^5.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "tsup": "^8.0.0",
+    "vitest": "^1.2.0"
+  },
+  "license": "MIT"
+}
