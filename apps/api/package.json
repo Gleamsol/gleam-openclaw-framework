@@ -1,0 +1,38 @@
+{
+  "name": "@gleam-openclaw/api",
+  "version": "2.0.0",
+  "private": true,
+  "description": "OpenClaw API server — RESTful endpoints for agent execution and token payment",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@gleam-openclaw/core": "workspace:*",
+    "@gleam-openclaw/model-router": "workspace:*",
+    "@gleam-openclaw/solana-gateway": "workspace:*",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "compression": "^1.7.4",
+    "express-rate-limit": "^7.1.5",
+    "zod": "^3.22.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "tsup": "^8.0.0",
+    "tsx": "^4.7.0",
+    "vitest": "^1.2.0",
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@types/compression": "^1.7.5",
+    "@types/uuid": "^9.0.0"
+  },
+  "license": "MIT"
+}
