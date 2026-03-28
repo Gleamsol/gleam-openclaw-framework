@@ -22,7 +22,8 @@
     "compression": "^1.7.4",
     "express-rate-limit": "^7.1.5",
     "zod": "^3.22.0",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "@solana/web3.js": "^1.91.0"
   },
   "devDependencies": {
     "typescript": "^5.3.3",
